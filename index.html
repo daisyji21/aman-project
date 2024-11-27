@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Aman Hostel</h1>
+        <nav>
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('booking')">Book a Room</button>
+            <button onclick="showPage('details')">Student Details</button>
+        </nav>
+    </header>
+    <main id="content">
+        <!-- <section id="home">
+            
+            <p>Manage room bookings and student details efficiently.</p>
+        </section> -->
+        <section id="home">
+           
+            <h2>Book Your Home Away From Home</h2>
+            <p>Manage room bookings and student details efficiently.</p>
+            <div class="image-gallery">
+                
+                <img src="https://media.istockphoto.com/id/679826718/photo/sleeps-bed-and-two-bedside-tables-in-the-interior-of-the-guest-room-in-the-house-close-up.jpg?s=1024x1024&w=is&k=20&c=MQ5KV8iPypzqrT2GwMSFB9ilNuJenOFEuYUWQVWWUTc=" alt="Double room">
+                <img src="https://media.istockphoto.com/id/679826702/photo/sleeper-a-bed-and-a-bedside-table-in-the-interior-of-the-room-close-up.jpg?s=1024x1024&w=is&k=20&c=QECiwabripbx3O2q3LaF6LPQbUKratmM532LWFg0pWc=" alt="Single room">
+                <img src="https://media.istockphoto.com/id/1464639959/photo/interior-design-of-a-modern-contemporary-lobby-area-with-reception-counter-waiting-bench.jpg?s=1024x1024&w=is&k=20&c=WOdwehT36ate3SdbjUoON94sRH4HtWXeDGW4OmwBiLo=" alt="Lobby">
+            </div>
+        </section>
+        
+        <section id="booking" style="display: none;">
+            <h2>Book a Room</h2>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" required>
+
+                <label for="room">Room Preference:</label>
+                <select id="room" required>
+                    <option value="Single">Single</option>
+                    <option value="Double">Double</option>
+                    <option value="Shared">Shared</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="details" style="display: none;">
+            <h2>Student Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Room</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTable"></tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Hostel Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
